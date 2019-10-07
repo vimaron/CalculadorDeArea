@@ -32,10 +32,9 @@ public class Triangulo extends Figure {
         this.alturaT = alturaT;
     }
     @Override
-    public void areaCalculator(){
+    public String areaCalculator(){
         area = (baseT * alturaT) / 2;
-        System.out.println("la base del trangulo es = " + baseT + ", la altura es = " + alturaT +
-                " y el area es = " + area);
+        return toString();
     }
     @Override
     public int hashCode(){
@@ -43,7 +42,7 @@ public class Triangulo extends Figure {
     }
     @Override
     public String toString(){
-        return "Figure {area = " + this.area + " base = " + this.baseT + " altura = " + this.alturaT + "}";
+        return "triangulo {area = " + this.area + " base = " + this.baseT + " altura = " + this.alturaT + "}";
     }
     @Override
     public boolean equals(Object obj){

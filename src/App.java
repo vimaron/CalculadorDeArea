@@ -9,8 +9,8 @@ public class App {
         Figure t1 = new Triangulo(3.5, 8.3, 2.0);
         Figure r1 = new Rectangulo(2.0, 7.5);
 
-        c1.areaCalculator();
-        t1.areaCalculator();
-        r1.areaCalculator();
+        System.out.println("La figura c1 es un " + c1.areaCalculator());
+        System.out.println("La figura t1 en un " + t1.areaCalculator());
+        System.out.println("la figura r1 es un " + r1.areaCalculator());
     }
 }

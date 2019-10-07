@@ -23,10 +23,11 @@ public class Circulo extends Figure {
     public void setRadio(Double radio) {
         this.radio = radio;
     }
+
     @Override
-    public void areaCalculator(){
+    public String areaCalculator(){
         area = PI * radio * radio;
-        System.out.println("el radio es = " + radio + " y area = " + area);
+        return toString();
     }
     @Override
     public int hashCode(){
@@ -34,7 +35,7 @@ public class Circulo extends Figure {
     }
     @Override
     public String toString(){
-        return "Figure {area = " + this.area + " radio = " + this.radio + "}";
+        return "circulo {area = " + this.area + " radio = " + this.radio + "}";
     }
     @Override
     public boolean equals(Object obj){

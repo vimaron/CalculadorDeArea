@@ -32,10 +32,9 @@ public class Rectangulo extends Figure {
         this.alturaR = alturaR;
     }
     @Override
-    public void areaCalculator(){
+    public String areaCalculator(){
         area = baseR * alturaR;
-        System.out.println("La base del rectangulo es = " + baseR + ", la altura es = " + alturaR +
-                " y el area es = " + area);
+        return toString();
     }
     @Override
     public int hashCode(){
@@ -43,7 +42,7 @@ public class Rectangulo extends Figure {
     }
     @Override
     public String toString(){
-        return "Figure {area = " + this.area + " base = " + this.baseR + " altura = " + this.alturaR + "}";
+        return "rectangulo {area = " + this.area + " base = " + this.baseR + " altura = " + this.alturaR + "}";
     }
     @Override
     public boolean equals(Object obj){

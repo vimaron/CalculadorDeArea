@@ -15,7 +15,8 @@ public abstract class Figure {
     public void setArea(Double area) {
         this.area = area;
     }
-    public abstract void areaCalculator();
+    public abstract String areaCalculator();
+
 
     @Override
     public int hashCode(){
